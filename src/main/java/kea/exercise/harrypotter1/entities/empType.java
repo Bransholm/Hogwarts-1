@@ -1,2 +1,5 @@
-package kea.exercise.harrypotter1.entities;public enum empType {
+package kea.exercise.harrypotter1.entities;
+
+public enum empType {
+    professor
 }

@@ -1,4 +1,4 @@
-package kea.exercise.harrypotter1;
+package kea.exercise.harrypotter1.entities;
 
 public class Person {
     private String lastName;
@@ -12,15 +12,6 @@ public class Person {
         this.lastName = lastName;
         this.firstName = firstName;
         this.middleName = middleName;
-    }
-
-    @Override
-    public String toString() {
-        return "Person{" +
-                "lastName='" + lastName + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", middleName='" + middleName + '\'' +
-                '}';
     }
 
     public String getLastName() {
@@ -45,5 +36,14 @@ public class Person {
 
     public void setMiddleName(String middleName) {
         this.middleName = middleName;
+    }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "lastName='" + lastName + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", middleName='" + middleName + '\'' +
+                '}';
     }
 }
