@@ -1,18 +1,17 @@
 package kea.exercise.harrypotter1.entities;
 
-import java.time.LocalDate;
 import java.util.Date;
 
 public class Teacher extends Person {
     private empType employment;
     private Date employmentStart;
-    private  Date employmentEnd;
+    private Date employmentEnd;
 
     public Teacher() {
         super();
     }
 
-    public Teacher(String lastName, String firstName, String middleName, empType employment, LocalDate employmentStart, LocalDate employmentEnd) {
+    public Teacher(String lastName, String firstName, String middleName, empType employment, Date employmentStart, Date employmentEnd) {
         super(lastName, firstName, middleName);
         this.employment = employment;
         this.employmentStart = employmentStart;
@@ -27,19 +26,19 @@ public class Teacher extends Person {
         this.employment = employment;
     }
 
-    public LocalDate getEmploymentStart() {
+    public Date getEmploymentStart() {
         return employmentStart;
     }
 
-    public void setEmploymentStart(LocalDate employmentStart) {
+    public void setEmploymentStart(Date employmentStart) {
         this.employmentStart = employmentStart;
     }
 
-    public LocalDate getEmploymentEnd() {
+    public Date getEmploymentEnd() {
         return employmentEnd;
     }
 
-    public void setEmploymentEnd(LocalDate employmentEnd) {
+    public void setEmploymentEnd(Date employmentEnd) {
         this.employmentEnd = employmentEnd;
     }
 
