@@ -12,6 +12,7 @@ public class Subject {
         this.name = name;
         this.schoolYear = schoolYear;
         this.elective = elective;
+        printSubject();
     }
 
     public String getName() {
@@ -45,5 +46,9 @@ public class Subject {
                 ", schoolYear=" + schoolYear +
                 ", elective=" + elective +
                 '}';
+    }
+
+    private void printSubject() {
+        System.out.println("Subject created. Name: " + name + ", School Year: " + schoolYear + ", Elective: " + elective);
     }
 }
