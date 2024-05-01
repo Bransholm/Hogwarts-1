@@ -13,6 +13,7 @@ public class Ingredient extends TeachingMaterial{
         this.name = name;
         this.amount = amount;
         this.unit = unit;
+        printIngredient();
     }
 
     @Override
@@ -48,5 +49,9 @@ public class Ingredient extends TeachingMaterial{
                 ", amount=" + amount +
                 ", unit='" + unit + '\'' +
                 '}';
+    }
+
+    private void printIngredient() {
+        System.out.println("Ingredient created --> Name: " + name + ", Amount: " + amount + ", Unit: " + unit);
     }
 }

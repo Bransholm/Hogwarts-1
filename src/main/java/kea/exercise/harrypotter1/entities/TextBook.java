@@ -15,6 +15,7 @@ public class TextBook extends TeachingMaterial{
         this.author = author;
         this.publisher = publisher;
         this.publishedYear = publishedYear;
+        printTextBook();
     }
 
     public String getTitle() {
@@ -57,5 +58,9 @@ public class TextBook extends TeachingMaterial{
                 ", publisher='" + publisher + '\'' +
                 ", publishedYear=" + publishedYear +
                 '}';
+    }
+
+    private void printTextBook() {
+        System.out.println("Textbook created --> Title: " + title + ", Author: " + author + ", Publisher: " + publisher + ", Published Year: " + publishedYear);
     }
 }

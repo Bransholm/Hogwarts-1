@@ -12,6 +12,7 @@ public class House {
         this.name = name;
         this.founder = founder;
         this.colors = colors;
+        printHouse();
     }
 
     public String getName() {
@@ -45,5 +46,9 @@ public class House {
                 ", founder='" + founder + '\'' +
                 ", colors='" + colors + '\'' +
                 '}';
+    }
+
+    private void printHouse() {
+        System.out.println("House created --> Name: " + name + ", Founder: " + founder + ", Colors: " + colors);
     }
 }

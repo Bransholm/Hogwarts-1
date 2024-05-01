@@ -49,6 +49,6 @@ public class Subject {
     }
 
     private void printSubject() {
-        System.out.println("Subject created. Name: " + name + ", School Year: " + schoolYear + ", Elective: " + elective);
+        System.out.println("Subject created --> Name: " + name + ", School Year: " + schoolYear + ", Elective: " + elective);
     }
 }

@@ -11,6 +11,7 @@ public class Tool extends TeachingMaterial{
     public Tool(String name, String description) {
         this.name = name;
         this.description = description;
+        printTool();
     }
 
     @Override
@@ -37,5 +38,9 @@ public class Tool extends TeachingMaterial{
                 "name='" + name + '\'' +
                 ", description='" + description + '\'' +
                 '}';
+    }
+
+    private void printTool() {
+        System.out.println("Tool created --> Name: " + name + ", Description: " + description);
     }
 }
