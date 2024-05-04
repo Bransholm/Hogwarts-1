@@ -16,6 +16,7 @@ public class Course {
         this.teacher = teacher;
         this.student = student;
         this.materials = materials;
+        printCourse();
     }
 
     public Subject getSubject() {
@@ -52,11 +53,22 @@ public class Course {
 
     @Override
     public String toString() {
-        return "Course{" +
-                "subject=" + subject +
-                ", teacher=" + teacher +
-                ", student=" + Arrays.toString(student) +
-                ", materials=" + Arrays.toString(materials) +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("Course: ").append(subject.getName()).append("\n");
+        sb.append("Teacher: ").append(teacher.getFirstName()).append(" ").append(teacher.getLastName()).append("\n");
+        sb.append("Students: ").append(Arrays.toString(student)).append("\n");
+        sb.append("Teaching Materials: ").append(Arrays.toString(materials)).append("\n");
+
+        return sb.toString();
+    }
+
+
+    public void printCourse() {
+        System.out.println("Course created --> " +
+                "Subject: " + subject.getName() +
+                ", Teacher: " + teacher.getFirstName() +
+                ", Student: " + Arrays.toString(student) +
+                ", Materials: " + Arrays.toString(materials)
+        );
     }
 }

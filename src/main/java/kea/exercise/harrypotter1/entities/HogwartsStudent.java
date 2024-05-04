@@ -14,6 +14,7 @@ public class HogwartsStudent extends Student{
         this.house = house;
         this.prefect = prefect;
         this.teams = teams;
+        printStudent();
     }
 
     public House getHouse() {
@@ -47,5 +48,14 @@ public class HogwartsStudent extends Student{
                 ", prefect=" + prefect +
                 ", teams='" + teams + '\'' +
                 '}';
+    }
+
+    // Method to print the student
+    public void printStudent() {
+        System.out.println("Student created --> Name: " + getFirstName() + " " + getMiddleName() + " " + getLastName() +
+                ", Enrollment Year: " + getEnrollmentYear() + ", Graduation Year: " + getGraduationYear() +
+                ", Graduated: " + isGraduated() + ", House: " + getHouse().getName() +
+                ", Prefect: " + isPrefect() + ", Teams: " + getTeams());
+
     }
 }

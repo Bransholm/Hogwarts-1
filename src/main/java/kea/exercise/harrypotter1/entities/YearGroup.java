@@ -1,20 +1,21 @@
 package kea.exercise.harrypotter1.entities;
 
 
+import java.util.Arrays;
 import java.util.Date;
 
 public class YearGroup {
     private int schoolYear;
     private Date beginningOfSchoolYear;
-    private Student student;
+    private Student[] students;
 
     public YearGroup() {
     }
 
-    public YearGroup(int schoolYear, Date beginningOfSchoolYear, Student student) {
+    public YearGroup(int schoolYear, Date beginningOfSchoolYear, Student[] students) {
         this.schoolYear = schoolYear;
         this.beginningOfSchoolYear = beginningOfSchoolYear;
-        this.student = student;
+        this.students = students;
     }
 
     public int getSchoolYear() {
@@ -33,12 +34,12 @@ public class YearGroup {
         this.beginningOfSchoolYear = beginningOfSchoolYear;
     }
 
-    public Student getStudent() {
-        return student;
+    public Student[] getStudents() {
+        return students;
     }
 
-    public void setStudent(Student student) {
-        this.student = student;
+    public void setStudents(Student[] students) {
+        this.students = students;
     }
 
     @Override
@@ -46,7 +47,7 @@ public class YearGroup {
         return "YearGroup{" +
                 "schoolYear=" + schoolYear +
                 ", beginningOfSchoolYear=" + beginningOfSchoolYear +
-                ", student=" + student +
+                ", students=" + Arrays.toString(students) +
                 '}';
     }
 }

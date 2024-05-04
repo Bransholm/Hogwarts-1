@@ -1,6 +1,7 @@
 package kea.exercise.harrypotter1.data;
 
 import kea.exercise.harrypotter1.entities.*;
+import java.time.LocalDate;
 
 public class InitData {
 
@@ -29,6 +30,33 @@ public class InitData {
         Ingredient knotgrass = new Ingredient("Knotgrass", 1, "handful");
         Ingredient powderedBicornHorn = new Ingredient("Powdered Bicorn Horn", 0.25, "pinch");
         Ingredient slicedMandrakeRoot = new Ingredient("Sliced Mandrake Root", 0.75, "slice");
+
+        //Create Students
+        HogwartsStudent harry = new HogwartsStudent("Potter", "Harry", "James", 1991, 1998, false, Gryffindor, false, "Quidditch");
+        HogwartsStudent ron = new HogwartsStudent("Weasley", "Ron", "Bilius", 1991, 1998, false, Gryffindor, false, "Quidditch");
+        HogwartsStudent hermione = new HogwartsStudent("Granger", "Hermione", "", 1991, 1998, false, Gryffindor, false, "Gobstones");
+        HogwartsStudent luna = new HogwartsStudent("Lovegood", "Luna", "", 1991, 1998, false, Ravenclaw, false, "D.A.");
+        HogwartsStudent cho = new HogwartsStudent("Chang", "Cho", "", 1991, 1998, false, Ravenclaw, false, "Quidditch");
+        HogwartsStudent padma = new HogwartsStudent("Patil", "Padma", "", 1991, 1998, false, Ravenclaw, false, "Chess");
+        HogwartsStudent draco = new HogwartsStudent("Malfoy", "Draco", "Lucius", 1991, 1998, false, Slytherin, false, "Quidditch");
+        HogwartsStudent pansy = new HogwartsStudent("Parkinson", "Pansy", "", 1991, 1998, false, Slytherin, false, "Gobstones");
+        HogwartsStudent blaise = new HogwartsStudent("Zabini", "Blaise", "", 1991, 1998, false, Slytherin, false, "Dueling");
+        HogwartsStudent cedric = new HogwartsStudent("Diggory", "Cedric", "", 1991, 1998, false, Hufflepuff, false, "Quidditch");
+        HogwartsStudent hannah = new HogwartsStudent("Abbott", "Hannah", "", 1991, 1998, false, Hufflepuff, false, "D.A.");
+        HogwartsStudent justin = new HogwartsStudent("Finch-Fletchley", "Justin", "", 1991, 1998, false, Hufflepuff, false, "Gobstones");
+
+        //Create HogwartsTeacher Horace Slughorn
+        HogwartsTeacher horace = new HogwartsTeacher("Slughorn", "Horace", "", empType.professor, LocalDate.of(2001, 9, 1), null, Slytherin, false);
+
+        //Create Potions Course
+        new Course(Potions, horace, new Student[]{harry, ron, hermione, luna, cho, padma, draco, pansy, blaise, cedric, hannah, justin}, new TeachingMaterial[]{potionsTextBook, cauldron, silverKnife, unicornHair, dragonBlood, fluxweed, knotgrass, powderedBicornHorn, slicedMandrakeRoot});
+
+
+
+
+
+
+
 
 
 
